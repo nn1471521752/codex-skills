@@ -1,0 +1,4 @@
+interface:
+  display_name: "App Post-Dev Sync"
+  short_description: "Write app implementation results back to Daily and Obsidian app pages"
+  default_prompt: "Use $app-post-dev-sync to sync this app change back to the current workday Daily and the related Obsidian project pages from the repo AGENTS.md."
