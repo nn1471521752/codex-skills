@@ -1,4 +1,4 @@
 interface:
   display_name: "App Worklog Pulse"
-  short_description: "Log an in-progress app milestone into the current workday Daily"
-  default_prompt: "Use $app-worklog-pulse to record this app milestone into the current workday Daily, using the repo AGENTS.md and a single 今日执行记录 timeline."
+  short_description: "Log an evidence-backed app milestone into the current workday Daily"
+  default_prompt: "Use $app-worklog-pulse to record this concrete app milestone into the current workday Daily, using the repo AGENTS.md and a single 今日执行记录 timeline."

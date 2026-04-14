@@ -9,6 +9,8 @@ description: Use when logging a clear in-progress milestone from an app reposito
 
 Record a meaningful in-progress milestone into the current workday Daily note before the whole task is finished.
 
+This is the default mid-round logging step for app repository work.
+
 ## When to use
 
 - A small feature or clear subtask is done
@@ -32,10 +34,10 @@ Record a meaningful in-progress milestone into the current workday Daily note be
 ## Steps
 
 1. Read the current repository `AGENTS.md` first and use it to identify the app name, the related Obsidian Daily, and the sync rules.
-2. Confirm the milestone is concrete enough to log.
+2. Confirm the milestone is concrete enough to log, based on changed files, a reproducible experiment, a blocker with evidence, or a user-confirmed decision.
 3. Write the milestone into the same `今日执行记录` section of the current workday Daily note. Do not create project-named supplement sections.
 4. Add a `[AppName]` prefix when needed to keep the shared Daily timeline readable.
-5. If the milestone already changes project stage, blockers, or externally visible behavior, explicitly say that `app-post-dev-sync` should follow.
+5. If the milestone already changes project stage, blocker framing, or externally visible behavior, explicitly say that `app-post-dev-sync` should follow and point to the likely project pages.
 
 ## Outputs
 

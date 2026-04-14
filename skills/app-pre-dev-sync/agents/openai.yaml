@@ -1,4 +1,4 @@
 interface:
   display_name: "App Pre-Dev Sync"
-  short_description: "Load the current app repository context before coding"
-  default_prompt: "Use $app-pre-dev-sync to summarize the current app repository context, using the repo AGENTS.md and matching Obsidian pages."
+  short_description: "Load repo + Obsidian context before coding"
+  default_prompt: "Use $app-pre-dev-sync as the default entry for app repository work to summarize repo context, current working state, and matching Obsidian pages from the repo AGENTS.md."

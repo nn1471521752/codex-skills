@@ -25,6 +25,14 @@
 - `superpowers/` 在本仓库里按 vendor snapshot 管理；安装脚本会显式排除 `.git` 元数据，不再把仓库元信息复制到运行目录。
 - 除非用户明确指定其他语言，生成或导出的 `doc` 文件默认使用中文内容与中文标题。
 
+## 当前 active global 技能边界
+
+- 当前全局 active app skills 只有 3 个：`app-pre-dev-sync`、`app-worklog-pulse`、`app-post-dev-sync`。
+- 它们负责应用开发的默认闭环：开始开发前同步、开发中明确节点记录、开发后回写到 Obsidian。
+- 各 app 仓库自己的 `AGENTS.md` 负责提供 Obsidian 页面路径、工作日切换规则和同步边界；这些仓库不再需要各自维护一套同职责的 active skills。
+- Obsidian Vault 专属节奏和内容流程（如 `daily-planner`、`daily-close`、`demo-to-video`、`script-draft`）本轮仍留在对应 Vault 仓库，不在这个全局仓库统一维护。
+- 旧的 vault-only `pre-dev-sync` / `post-dev-sync` 已进入冻结状态，不再作为普通 app 仓库开发的默认入口。
+
 ## 目录说明
 
 - `AGENTS.md`：全局工作约束，包括 UTF-8、输出语言和安装关系

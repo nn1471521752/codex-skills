@@ -9,6 +9,8 @@ description: Use when starting or resuming work in an app repository that syncs 
 
 Before changing code in an app repository, compress the current goal, stage, blockers, likely code area, and likely Obsidian sync touchpoints.
 
+This is the default entry point for app repository work. Prefer it over older vault-local pre-dev sync skills.
+
 ## When to use
 
 - The user is about to start coding in an app repository
@@ -31,12 +33,13 @@ Before changing code in an app repository, compress the current goal, stage, blo
 ## Steps
 
 1. Read the current repository `AGENTS.md` first. Treat it as the source of truth for app name, related Obsidian paths, workday cutoff rules, and sync expectations.
-2. Read the repository's most relevant local entry docs to understand runtime commands, code layout, and likely change surface.
+2. Read the repository's most relevant local entry docs and inspect the current repo working state (for example current branch and dirty files) to understand runtime commands, code layout, and likely change surface before coding.
 3. Read the Obsidian `Hub.md`, `Sprint.md`, and `Changelog.md` pages referenced by the repository `AGENTS.md`.
 4. If the current workday Daily exists, check whether its focus is already aligned to this app; if not, call that out explicitly.
 5. Infer the most likely code area to touch from the user's request and the repository structure.
-6. Output current goal, current stage, blockers, suggested scope, Daily alignment status, and the most likely Obsidian pages to sync after the work.
-7. If blockers in `Hub.md` or `Sprint.md` are placeholder, missing, contradictory, or untrustworthy, output `未知/需确认` instead of inventing blockers.
+6. If Obsidian project pages conflict with recent Daily facts or obvious repo state, call the conflict out explicitly instead of inventing a single clean story.
+7. Output current goal, current stage, blockers, suggested scope, Daily alignment status, and the most likely Obsidian pages to sync after the work.
+8. If blockers in `Hub.md` or `Sprint.md` are placeholder, missing, contradictory, or untrustworthy, output `未知/需确认` instead of inventing blockers.
 
 ## Outputs
 
