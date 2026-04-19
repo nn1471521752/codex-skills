@@ -17,7 +17,8 @@
 
 - 应用开发同步默认只维护这 3 个全局 skills：`app-pre-dev-sync`、`app-worklog-pulse`、`app-post-dev-sync`。
 - 这 3 个 skills 负责“开始开发前同步 -> 开发中明确节点记录 -> 开发后回写”闭环；具体 Obsidian 页面路径、工作日规则和同步边界由对应 app 仓库 `AGENTS.md` 提供。
-- 如果某个仓库仍有本地 `.codex\skills` 目录，不要默认把它当成 active source；除非该仓库 `AGENTS.md` 明确说明，否则应用开发同步仍以这里的全局 skills 为准。
+- 对普通 app 仓库开发，这 3 个 skills 不要求用户必须先做 `daily-planner`；如果当前工作日 Daily 还不存在，应先按 Vault 模板或最小必要结构自动补建，再继续同步。
+- 如果某个仓库仍有本地 `.codex\skills` 目录，不要默认把它当成 active source；空目录、占位目录，或未被该仓库 `AGENTS.md` 明确声明接管的目录，都不算 active source，应用开发同步仍以这里的全局 skills 为准。
 
 ## 编码约束
 
