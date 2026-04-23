@@ -30,7 +30,8 @@
 - 当前全局 active app skills 只有 3 个：`app-pre-dev-sync`、`app-worklog-pulse`、`app-post-dev-sync`。
 - 它们负责应用开发的默认闭环：开始开发前同步、开发中明确节点记录、开发后回写到 Obsidian。
 - 各 app 仓库自己的 `AGENTS.md` 负责提供 Obsidian 页面路径、工作日切换规则和同步边界；这些仓库不再需要各自维护一套同职责的 active skills。
-- Obsidian Vault 专属节奏和内容流程（如 `daily-planner`、`daily-close`、`demo-to-video`、`script-draft`）本轮仍留在对应 Vault 仓库，不在这个全局仓库统一维护。
+- `app-pre-dev-sync` 现在同时承担“每日计划门禁”：如果从任意 app 仓库开工时发现当前工作日 Daily 尚未形成当天计划，就先补建/补齐 Daily 里的当日计划，再继续 app 级同步。
+- Obsidian Vault 专属节奏和内容流程（如 `daily-planner`、`daily-close`、`demo-to-video`、`script-draft`）本轮仍留在对应 Vault 仓库，不在这个全局仓库统一维护；其中 `daily-planner` 仍用于从 Vault 视角做完整日计划，而不是取代 app 仓库入口的门禁。
 - 旧的 vault-only `pre-dev-sync` / `post-dev-sync` 已进入冻结状态，不再作为普通 app 仓库开发的默认入口。
 
 ## 目录说明
